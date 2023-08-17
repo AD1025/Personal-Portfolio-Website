@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.png") no-repeat center;
+    background-color: #111;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -179,6 +179,15 @@ section .title::after{
 }
 .home .max-width .row{
   margin-right: 0;
+}
+
+.container img{
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    width: auto; 
+    height: 500px;
+    border-radius: 10px;
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -221,8 +230,8 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 410px;
+    width: 300px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -430,63 +439,18 @@ section .title::after{
     background-color: #111;
 }
 
-/* profile links section styling */
-.teams{
-    background-color: #fff;
-}
-.teams .title::before{
-    background: black;
-}
-.teams .title::after{
-    content: "what I code";
-    background-color: #fff;
-}
-.teams .carousel .card{
-    background: rgb(241, 238, 238);
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-}
-.teams .carousel .card:hover{
-    background: rgb(6, 96, 156);
-}
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid rgb(6, 96, 156);
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
 
 
 /* contact section styling */
 .contact{
-    background: #111;
+    background: white;
 }
 .contact .title::before{
-    background: white;
+    background: rgb(10, 6, 6);
 }
 .contact .title::after{
     content: "get in touch";
-    background: #111;
+    background: #fcf8f8;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -579,20 +543,7 @@ section .title::after{
   color: rgb(6, 96, 156);
   background: none;
 }
-/* footer section styling */
-footer{
-    background: #111;
-    padding: 15px 23px;
-    color: #fff;
-    text-align: center;
-}
-footer span a{
-    color: rgb(6, 96, 156);
-    text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
-}
+
 
 
 /* responsive media query start */
